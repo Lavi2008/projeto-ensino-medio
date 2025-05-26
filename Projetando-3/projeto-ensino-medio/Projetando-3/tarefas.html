@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagem.png" type="image/x-icon">
+  <title>Projetando</title>
+</head>
+<body>
+  <div class="container">
+
+    <nav id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="login.html" onclick="mostrarSecao('Login')">Login</a></li>
+        <li><a href="projetos.html" onclick="mostrarSecao('Projetos')">Projetos</a></li>
+        <li><a href="tarefas.html" onclick="mostrarSecao('Tarefas')">Tarefas</a></li>
+        <li><a href="index.html" onclick="mostrarSecao('Tela Inicial')">Tela Inicial</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="conteudo">
+      <header id="menucima">
+        <h1>Projetando</h1>
+      </header>
+
+      <section id="form-tarefa">
+        <h2>Cadastrar Tarefa</h2>
+        <form id="tarefaForm">
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" name="descricao" required>
+
+          <label for="responsavel">Responsável:</label>
+          <input type="text" id="responsavel" name="responsavel" required>
+
+          <label for="tipo">Tipo de Recurso:</label>
+          <input type="text" id="tipo" name="tipo" required>
+
+          <label for="status">Status:</label>
+          <select id="status2" name="status2" onchange="atualizarCor()">
+            <!-- <option value="">Selecione</option> -->
+             Selecione
+            <option value="pendente2">Pendente</option>
+            <option value="em-andamento2">Em Andamento</option>
+            <option value="concluida2">Concluída</option>
+          </select>
+
+          <div id="corStatus" style="width: 50px; height: 50px; margin-top: 10px; background-color: gray; border-radius: 8px;"></div>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+  <footer> <p>&copy; 2025 Projetando </p>
+    <p>Endereço: São Leopoldo, 112 - Centro - WhatsApp +55 51 989004575</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

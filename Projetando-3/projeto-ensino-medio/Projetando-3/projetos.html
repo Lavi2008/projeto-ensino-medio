@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagem.png" type="image/x-icon">
+  <title>Projetando</title>
+</head>
+<body>
+  <div class="container">
+    
+    <nav id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="index.html">Tela Inicial</a></li>
+      </ul>
+    </nav>
+
+    <div class="conteudo">
+      <header id="menucima">
+        <h1>Projetando</h1>
+      </header>
+
+      <main>
+        <section id="parte-projetos" class="projetos-section">
+          <h2>Projetos</h2> 
+
+          <div class="projetos-container">
+            <div class="projeto-add" onclick="abrirModal()">+</div>
+          </div>
+
+          <div id="formulariosContainer"></div>
+
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="fecharModal()">&times;</span>
+              <input type="text" id="titulo" placeholder="Título">
+              <textarea id="descricao" placeholder="Descrição"></textarea>
+              <input type="date" id="data-inicio">
+              <input type="date" id="previsao-termino">
+              <input type="text" id="responsavel" placeholder="Nome do responsável">
+              
+              <label for="status-projeto">Status do projeto</label>
+              <select id="status-projeto">
+                <option value="pendente">Pendente</option>
+                <option value="em-andamento">Em andamento</option>
+                <option value="concluido">Concluído</option>
+              </select>
+              
+              <button id="salvarBtn" onclick="adicionarProjeto()">Salvar</button>
+            </div>
+          </div>
+
+          <div id="exibirProjetos"></div>  
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
