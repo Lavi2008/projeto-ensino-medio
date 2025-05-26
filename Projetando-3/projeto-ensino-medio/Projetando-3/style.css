@@ -1,0 +1,239 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+} 
+#menu {
+  width: 200px;
+  background-color: #80004D;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-aside{
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+#menu h2 {
+  font-size: 1.4em;
+  margin-bottom: 20px; 
+}
+
+#menu ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+#menu ul li {
+  margin-bottom: 15px;
+}
+
+#menu ul li a {
+  color: white;
+  text-decoration: none; 
+  display: block; 
+  padding: 8px 12px; 
+  border-radius: 12px; 
+  transition: background-color 0.3s,
+}
+
+#menu ul li a:hover {
+  background-color: #a03b70; 
+}
+
+#menu ul li a:active, 
+#menu ul li a:focus {
+  box-shadow: 0 0 10px white; 
+  outline: none;
+}
+
+
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#menucima {
+  background-color: #80004D;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#menucima h1 {
+  font-weight: 500; 
+  font-size: 1.8em; 
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+#imagem {
+  border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+  margin-bottom: 20px;
+ 
+}
+
+
+main h3 {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6; 
+  font-weight: 400; 
+  font-size: 1em;
+}
+
+  .projetos-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .projeto-card {
+    width: 200px;
+    height: 250px;
+    background-color: #80004D;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .projeto-card button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .projeto-add {
+    width: 100px;
+    height: 120px;
+    border: 2px dashed #80004D;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+  }
+ 
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+
+#loginForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+#loginForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#loginForm button:hover {
+  background-color: #555;
+}
+
+
+#error-msg {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
+footer {
+  background-color: #80004D;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  border-top: 2px solid #a03b70;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
